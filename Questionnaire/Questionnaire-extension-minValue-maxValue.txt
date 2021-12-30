@@ -28,23 +28,13 @@
     "item": [
         {
             "linkId": "1",
-            "text": "ANAMaNESIS",
+            "text": "Group 1",
             "type": "group",
             "repeats": false,
-            "extension": [
-                {
-                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
-                    "valueInteger": 100
-                },
-                {
-                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
-                    "valueInteger": 500
-                }
-            ],
             "item": [
                 {
                     "linkId": "1.1",
-                    "text": "ACCIDENTES",
+                    "text": "item 1.1",
                     "type": "integer",
                     "required": true,
                     "readOnly": false,
@@ -53,11 +43,21 @@
                         {
                             "valueInteger": 110
                         }
+                    ],
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                            "valueInteger": 100
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                            "valueInteger": 500
+                        }
                     ]
                 },
                 {
                     "linkId": "1.2",
-                    "text": "PRESION ARTERIAL PPP",
+                    "text": "Pressure Test",
                     "type": "string",
                     "required": true,
                     "readOnly": false,
@@ -65,7 +65,7 @@
                     "prefix": "mmHg",
                     "initial": [
                         {
-                            "valueInteger": 123
+                            "valueString": "Describe here"
                         }
                     ]
                 },
@@ -91,25 +91,6 @@
                                 "display": "NO"
                             },
                             "initialSelected": true
-                        }
-                    ]
-                },
-                {
-                    "linkId": "1.4",
-                    "text": "LUGAR DE INTERNACIÓN III",
-                    "type": "string",
-                    "required": true,
-                    "readOnly": false,
-                    "maxLength": 10,
-                    "enableWhen": [
-                        {
-                            "question": "1.1",
-                            "operator": "=",
-                            "answerCoding": {
-                                "system": "https://localhost/Questionnaire",
-                                "code": "5-2",
-                                "display": "NO"
-                            }
                         }
                     ]
                 }
