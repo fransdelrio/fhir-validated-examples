@@ -1,0 +1,119 @@
+{
+    "resourceType": "Questionnaire",
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"> minValue/maxValue extensions example </div>"
+    },
+    "identifier": [
+        {
+            "use": "official",
+            "value": "EndOfYearTest_20211230-1258"
+        }
+    ],
+    "version": "85",
+    "title": "TEST QUESTIONNAIRE Title (human friendly title)",
+    "name": "TEST_Questionnaire_AComputerFriendlyName",
+    "status": "active",
+    "experimental": false,
+    "code": [
+        {
+            "system": "http://fhir.geocom.com.uy/r4/CodeSystem/exampleCodeSystem",
+            "code": "Z",
+            "display": "Test Z"
+        }
+    ],
+    "date": "2021-12-30",
+    "publisher": "Dr. Nick Riviera",
+    "approvalDate": "2021-12-30",
+    "item": [
+        {
+            "linkId": "1",
+            "text": "ANAMaNESIS",
+            "type": "group",
+            "repeats": false,
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueInteger": 100
+                },
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueInteger": 500
+                }
+            ],
+            "item": [
+                {
+                    "linkId": "1.1",
+                    "text": "ACCIDENTES",
+                    "type": "integer",
+                    "required": true,
+                    "readOnly": false,
+                    "prefix": "mmHg",
+                    "initial": [
+                        {
+                            "valueInteger": 110
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.2",
+                    "text": "PRESION ARTERIAL PPP",
+                    "type": "string",
+                    "required": true,
+                    "readOnly": false,
+                    "maxLength": 200,
+                    "prefix": "mmHg",
+                    "initial": [
+                        {
+                            "valueInteger": 123
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.3",
+                    "text": "LOR5",
+                    "type": "choice",
+                    "required": true,
+                    "readOnly": false,
+                    "answerOption": [
+                        {
+                            "valueCoding": {
+                                "system": "https://localhost/QuestionnaireTest",
+                                "code": "5-19",
+                                "display": "SI"
+                            },
+                            "initialSelected": false
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "https://localhost/QuestionnaireTest",
+                                "code": "5-20",
+                                "display": "NO"
+                            },
+                            "initialSelected": true
+                        }
+                    ]
+                },
+                {
+                    "linkId": "1.4",
+                    "text": "LUGAR DE INTERNACIÓN III",
+                    "type": "string",
+                    "required": true,
+                    "readOnly": false,
+                    "maxLength": 10,
+                    "enableWhen": [
+                        {
+                            "question": "1.1",
+                            "operator": "=",
+                            "answerCoding": {
+                                "system": "https://localhost/Questionnaire",
+                                "code": "5-2",
+                                "display": "NO"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
