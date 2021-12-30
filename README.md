@@ -4,6 +4,7 @@ The examples have been validated using the server: http://hapi.fhir.org/baseR4
 
 The idea is to obtain as a result a JSON as close as possible to the one presented below, after validating the resource against the server.
 
+<code>
 {
     "resourceType": "OperationOutcome",
     "text": {
@@ -18,6 +19,7 @@ The idea is to obtain as a result a JSON as close as possible to the one present
         }
     ]
 }
+</code>
 
 __________________________________________________________________________________________________________________
 
@@ -28,6 +30,7 @@ Los ejemplos se han validado utilizando el servidor: http://hapi.fhir.org/baseR4
 
 La idea es obtener como resultado un JSON lo más cercano posible al presentado a continuación, luego de validar el recurso contra el servidor.
 
+<code>
 {
     "resourceType": "OperationOutcome",
     "text": {
@@ -42,4 +45,5 @@ La idea es obtener como resultado un JSON lo más cercano posible al presentado 
         }
     ]
 }
+</code>
 
