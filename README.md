@@ -2,24 +2,8 @@ The idea of ​​this repository is to provide examples of validated FHIR resou
 
 The examples have been validated using the server: http://hapi.fhir.org/baseR4
 
-The idea is to obtain as a result a JSON as close as possible to the one presented below, after validating the resource against the server.
+The idea is to obtain as a result a message as close as possible to "No issues detected during validation", after validating the resource against the server.
 
-<code>
-{
-    "resourceType": "OperationOutcome",
-    "text": {
-        "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td>\n\t\t\t</tr>\n\t\t</table>\n\t</div>"
-    },
-    "issue": [
-        {
-            "severity": "information",
-            "code": "informational",
-            "diagnostics": "No issues detected during validation"
-        }
-    ]
-}
-</code>
 
 __________________________________________________________________________________________________________________
 
@@ -28,22 +12,6 @@ La idea de este repositorio es aportar ejemplos de recursos FHIR validados, como
 
 Los ejemplos se han validado utilizando el servidor: http://hapi.fhir.org/baseR4
 
-La idea es obtener como resultado un JSON lo más cercano posible al presentado a continuación, luego de validar el recurso contra el servidor.
+La idea es obtener como resultado un mensaje lo más cercano posible a "No issues detected during validation", luego de validar el recurso contra el servidor.
 
-<code>
-{
-    "resourceType": "OperationOutcome",
-    "text": {
-        "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td>\n\t\t\t</tr>\n\t\t</table>\n\t</div>"
-    },
-    "issue": [
-        {
-            "severity": "information",
-            "code": "informational",
-            "diagnostics": "No issues detected during validation"
-        }
-    ]
-}
-</code>
 
