@@ -1,0 +1,43 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "QR-0001",
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"> Test markdown and xhtml extensions </div>"
+    },
+    "status": "in-progress",
+    "questionnaire": "Questionnaire/12345",
+    "authored": "2021-09-11T19:24:34-03:00",
+    "item": [
+        {
+            "linkId": "1",
+            "text": "Example",
+            "item": [
+                {
+                    "linkId": "1.1",
+                    "text": "Example Markdown",
+                    "_text": {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+                                "valueMarkdown": "## FHIR **Markdown Example** <mark>Highlighted answer</mark> [Welcome to FHIR](https://www.hl7.org/fhir/)"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "linkId": "1.2",
+                    "text": "Example XHTML",
+                    "_text": {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+                                "valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p><span style=\"background-color: rgb(247, 218, 100); \"> Highlighted answer XHTML example </span></p> </div>"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
